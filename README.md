@@ -32,7 +32,7 @@ This script was primarily designed to be run in a cloud notebook environment lik
 3. This tool requires Python 3 and the `pandas` library.
    To install the required dependency locally, run:
    `pip install pandas`
-4. Run the script via terminal: `python wrapped_analyzer.py`
+4. Run the script via terminal: `python wrapify.py`
 
 ## Configuration
 
