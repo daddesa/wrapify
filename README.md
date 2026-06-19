@@ -44,7 +44,7 @@ You can customize the script's behavior by modifying the variables at the top of
 
 ## Known Limitations
 
-When comparing Wrapify's output to your official Wrapped, you may notice slight discrepancies in artist rankings, specifically for artists involved in frequent collaborations or producer tags. 
+I personally fine-tuned the cutoff day in order to maximise accuracy. It was done by empirically testing this tool on dozens of official Wrapped top 5 lists. Even though, while comparing Wrapify's output to your official Wrapped, you may notice slight discrepancies in artist rankings, specifically for artists involved in frequent collaborations or producer tags. 
 
 Wrapify groups data using the `master_metadata_album_artist_name` string exactly as it appears in the raw JSON. Spotify's internal algorithm, however, splits joint ventures (e.g., "Artist A & Artist B") and featured verses, crediting both artists individually. Without complex regex string-splitting, solo minutes for highly collaborative artists will naturally appear lower in this raw analysis than in the official graphics.
 
