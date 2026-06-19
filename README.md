@@ -8,13 +8,6 @@
 * **Dual Metric Toggles:** Built-in switches allow you to enable side-by-side comparisons (plays vs. minutes) to see how track length and skipping habits skew your personal rankings.
 * **Customizable Timeframes:** Override the default cutoff dates (see below) to match exact historical tracking periods.
 
-## Prerequisites
-
-This tool requires Python 3 and the `pandas` library.
-
-To install the required dependency locally, run:
-`pip install pandas`
-
 ## Getting Your Data
 
 1. Go to your Spotify Account settings on a web browser.
@@ -27,7 +20,7 @@ To install the required dependency locally, run:
 This script was primarily designed to be run in a cloud notebook environment like Google Colab, but can easily be run locally.
 
 ### Option A: Running on Google Colab
-1. Open a new Google Colab notebook and paste the code from `wrapped_analyzer.py`.
+1. Open a new Google Colab notebook and paste the code from `wrapify.py`.
 2. Upload all your `Streaming_History_Audio_*.json` files directly to the root directory of the Colab environment.
 3. Leave the file pattern as is: `FILE_PATTERN = '/Streaming_History_Audio_*.json'`
 4. Run the cell.
@@ -36,7 +29,10 @@ This script was primarily designed to be run in a cloud notebook environment lik
 1. Place your `.json` files in the exact same directory as the `wrapped_analyzer.py` script.
 2. **Important:** Open the script and remove the forward slash `/` from the file pattern variable so it looks like this:
    `FILE_PATTERN = 'Streaming_History_Audio_*.json'`
-3. Run the script via terminal: `python wrapped_analyzer.py`
+3. This tool requires Python 3 and the `pandas` library.
+   To install the required dependency locally, run:
+   `pip install pandas`
+4. Run the script via terminal: `python wrapped_analyzer.py`
 
 ## Configuration
 
